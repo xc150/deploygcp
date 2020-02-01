@@ -13,11 +13,11 @@ def name(value):
     val = {"value": value}
     return jsonify(val)
 
-@app.route('/bob')
+@app.route('/xc')
 def xc():
     return "Yeah it's me"
 
-@app.route('/xc')
+@app.route('/bob')
 def bob():
     val = {"value": "bob"}
     return jsonify(val)
