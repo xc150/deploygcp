@@ -1,12 +1,12 @@
 from flask import Flask
-from flask import jsonify
+from flask import jsonify, render_template
 
 app = Flask(__name__)
 
 @app.route('/')
-def hello():
-    """Return a friendly HTTP greeting."""
-    return 'Hello I like to make AI Apps'
+def homapage():
+    """Return my homepage."""
+    return render_template("index.html")
 
 @app.route('/name/<value>')
 def name(value):
